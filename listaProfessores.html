@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="#">
+    <!-- Adicione o link para os ícones -->
+    <link rel="stylesheet" href="/CSS/styleLista.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>Lista de Professores</title>
+    
+</head>
+
+<body>
+    <!-- Menu lateral -->
+    <div class="sidenav">
+        <!-- Adiciona a imagem como um link para a tela inicial -->
+        <a href="home.html"><img src="/img/logo-gov.png" alt="Logo Gov"></a>
+        <!-- Adiciona a opção de menu "Home" -->
+        <a href="home.html"><i class="fas fa-home"></i> Home</a>
+        <!-- Adicione outras opções de menu conforme necessário -->
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div class="container">
+        <h1>Lista de instrutores</h1>
+        <table class="professors-table">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="professors-list">
+                <!-- Aqui serão listados os professores do banco de dados -->
+                <!-- Exemplo com 50 professores por página -->
+                <tr>
+                    <td>Nome do Professor</td>
+                    <td>CPF</td>
+                    <td>
+                        <!-- Botão de edição -->
+                        <button class="btn-edit" onclick="editarProfessor()">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                        <!-- Botão de exclusão -->
+                        <button class="btn-delete" onclick="excluirProfessor()">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </td>
+                </tr>
+                <!-- Repita esse bloco de tr para cada professor na página -->
+            </tbody>
+        </table>
+        <button id="btn-add-professor">Adicionar Novo Professor</button>
+
+        <!-- Barras na parte inferior da tela -->
+        <div class="bottom-bar">
+            <button class="back-btn" disabled><i class="fas fa-chevron-left"></i> Voltar</button>
+            <span class="page-number">Página 1 de 5</span>
+            <button class="next-btn">Avançar <i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Adicione os scripts necessários aqui -->
+</body>
+
+</html>
