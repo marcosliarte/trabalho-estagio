@@ -15,7 +15,7 @@
             <img src="img/svg_form.svg" alt="">
         </div>
         <div class="form">
-            <form action="#" enctype="multipart/form-data">
+            <form action="./php/cadastrar.php" method="post" enctype="multipart/form-data">
                 <div class="form-header">
                     <div class="title">
                         <h1>Preencha o Formulário</h1>
@@ -24,20 +24,20 @@
                 <div class="input-group">
                     <!-- Outros campos do formulário -->
                     <div class="input-box">
-                        <label for="name">Nome</label>
-                        <input id="name" type="text" name="name" placeholder="Digite o nome" required>
+                        <label for="nome">Nome</label>
+                        <input id="nome" type="text" name="nome" placeholder="Digite o nome" required>
                     </div>
                     <div class="input-box">
-                        <label for="nomeCurso">Curso</label>
-                        <input id="nomeCurso" type="text" name="nomeCurso" placeholder="Digite o nome do curso" required>
+                        <label for="curso">Curso</label>
+                        <input id="curso" type="text" name="curso" placeholder="Digite o nome do curso" required>
                     </div>
                     <div class="input-box">
-                        <label for="nomeDisciplina">Disciplina</label>
-                        <input id="nomeDisciplina" type="text" name="nomeDisciplina" placeholder="Digite o nome da Disciplina" required>
+                        <label for="disciplina">Disciplina</label>
+                        <input id="disciplina" type="text" name="disciplina" placeholder="Digite o nome da Disciplina" required>
                     </div>
                     <div class="input-box">
-                        <label for="cargaHoraria">Carga Horária</label>
-                        <input id="cargaHoraria" type="number" name="cargaHoraria" placeholder="Digite a carga horária" required>
+                        <label for="carga_horaria">Carga Horária</label>
+                        <input id="carga_horaria" type="number" name="carga_horaria" placeholder="Digite a carga horária" required>
                     </div>
                     <div class="input-box">
                         <label for="projeto">Projeto</label>
@@ -58,29 +58,6 @@
                     <div class="input-box">
                         <label for="cpf">CPF</label>
                         <input id="cpf" type="text" name="cpf" placeholder="Digite o CPF" required>
-                    </div>
-                </div>
-
-                <div class="gender-inputs">
-                    <div class="gender-title">
-                        <h6>Gênero</h6>
-                    </div>
-
-                    <div class="gender-group">
-                        <div class="gender-input">
-                            <input id="female" type="radio" name="gender">
-                            <label for="female">Feminino</label>
-                        </div>
-
-                        <div class="gender-input">
-                            <input id="male" type="radio" name="gender">
-                            <label for="male">Masculino</label>
-                        </div>
-
-                        <div class="gender-input">
-                            <input id="others" type="radio" name="gender">
-                            <label for="others">Outros</label>
-                        </div>
                     </div>
                 </div>
 
